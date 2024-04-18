@@ -1,0 +1,57 @@
+@charset "utf-8";
+main{
+  padding: 32px 0;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  min-width: 500px;
+}
+h2{
+  border: 1px solid #000000;
+  display: inline-block;
+  margin: 0;
+}
+.prefList{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 0 0 0;
+
+}
+.prefList input{
+  margin-right: 8px;
+}
+.prefList li{
+  width: 25%;
+  font-size: 24px;
+
+}
+#selectPopulationKind{
+  font-size: 16px;
+  padding: 4px;
+  margin: 32px 0;
+  border: 1px solid black;
+
+}
+
+
+@media screen and (max-width: 428px) {
+  main{
+    padding: 16px 0;
+  }
+  .container{
+    min-width: unset;
+  }
+  .prefList li{
+    font-size: 12px;
+  }
+  .prefList{
+    margin: 16px 0;
+  }
+  #selectPopulationKind{
+    margin: 8px;
+  }
+}
